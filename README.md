@@ -33,9 +33,17 @@ Text prompts are inherently ambiguous: many valid CAD models can satisfy the sam
 
 ## Installation
 
+Use a **dedicated virtual environment** for this repo so CadQuery and its dependencies.
+
+Requires **Python 3.10+**. From the repository root:
+
 ```bash
-pip install -e .
+python3 -m venv cadtestenv
+source cadtestenv/bin/activate          # Windows: cadtestenv\Scripts\activate
+pip install --upgrade pip setuptools wheel
+pip install -e . --timeout 120 --retries 10
 ```
+
 
 ## Quick Start in Browser
 
