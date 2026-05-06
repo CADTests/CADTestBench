@@ -37,7 +37,13 @@ Text prompts are inherently ambiguous: many valid CAD models can satisfy the sam
 pip install -e .
 ```
 
-## Quick Start
+## Quick Start in Browser
+
+Open **[CADTestBench Viewer](https://cadtestbench-viewer.vercel.app/)** for four paper baselines (GPT-5.2 and Claude 4.6 Sonnet, abstract and detailed splits) with **preloaded** cadtest results. Browse directly in the browser.
+
+[![CADTestBench Viewer — paper baselines and per-sample cadtests](assets/CADTestBenchViewer.png)](https://cadtestbench-viewer.vercel.app/)
+
+## Run Paper Baselines
 
 The repo includes four paper baselines (GPT-5.2 and Claude 4.6 Sonnet, abstract and detailed splits). From the project root, after `pip install -e .`, run:
 
@@ -49,10 +55,6 @@ cadtestbench evaluate baselines/Claude-4.6-Sonnet/Detailed --partition detailed
 ```
 
 Each command loads prompts and cadtests from [`CADTests/CADTestBench`](https://huggingface.co/datasets/CADTests/CADTestBench) unless you pass `--dataset data/hf` for an offline Parquet tree. Use `--limit N` for a short run.
-
-> **Browse results (no install):** open **[CADTestBench Viewer](https://cadtestbench-viewer.vercel.app/)** for the same paper baselines with **preloaded** per-sample meshes, cadtest pass/fail, and breakdowns—directly in the browser.
-
-[![CADTestBench Viewer — paper baselines and per-sample cadtests](assets/CADTestBenchViewer.png)](https://cadtestbench-viewer.vercel.app/)
 
 ## Usage
 
