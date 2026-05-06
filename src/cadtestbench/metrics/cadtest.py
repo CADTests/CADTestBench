@@ -38,21 +38,9 @@ from typing import Any, Dict, List, Optional, Set
 
 import cadquery as cq
 
-from .. import cadtest_helpers
 from ..constants import eval_sample_stl_filename
 from ..data_source import HFDatasetSource
 from .interface import EvaluationMetric, MetricResult, SampleData
-
-
-def _build_helper_globals() -> Dict[str, Any]:
-    return {
-        name: getattr(cadtest_helpers, name)
-        for name in dir(cadtest_helpers)
-        if not name.startswith("_")
-    }
-
-
-_HELPER_GLOBALS: Dict[str, Any] = _build_helper_globals()
 
 
 def _row_id(row: Dict[str, Any]) -> Any:
@@ -411,7 +399,6 @@ def _run_cadtest_block(
                 )
 
             env["final_result"] = env[model_var_name]
-            env.update(_HELPER_GLOBALS)
 
             cadtest_entries = [_execute_one_cadtest(row, env) for row in cadtests]
 
