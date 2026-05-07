@@ -4,7 +4,7 @@ This repository contains the CADTestBench, the first test-based benchmark for Te
 
 CADTestBench is described on the paper __Text-to-CAD Evaluation with CADTests__.
 
-The benchmark data is loaded from Hugging Face by default ([`CADTests/CADTestBench`](https://huggingface.co/datasets/CADTests/CADTestBench)).
+The benchmark data is loaded from Hugging Face by default ([`anon-submission-2465453/CADTestBench`](https://huggingface.co/datasets/anon-submission-2465453/CADTestBench)).
 
 ## CADTestBench
 
@@ -62,11 +62,11 @@ cadtestbench evaluate baselines/Claude-4.6-Sonnet/Abstract --partition abstract
 cadtestbench evaluate baselines/Claude-4.6-Sonnet/Detailed --partition detailed
 ```
 
-Each command loads prompts and cadtests from [`CADTests/CADTestBench`](https://huggingface.co/datasets/CADTests/CADTestBench) unless you pass `--dataset data/hf` for an offline Parquet tree. Use `--limit N` for a short run.
+Each command loads prompts and cadtests from [`anon-submission-2465453/CADTestBench`](https://huggingface.co/datasets/anon-submission-2465453/CADTestBench) unless you pass `--dataset data/hf` for an offline Parquet tree. Use `--limit N` for a short run.
 
 ## Usage
 
-To evaluate a Text-to-CAD method with CADTestBench, load the benchmark prompts from Hugging Face ([`CADTests/CADTestBench`](https://huggingface.co/datasets/CADTests/CADTestBench)), then produce your method’s outputs in the directory layout described below.
+To evaluate a Text-to-CAD method with CADTestBench, load the benchmark prompts from Hugging Face ([`anon-submission-2465453/CADTestBench`](https://huggingface.co/datasets/anon-submission-2465453/CADTestBench)), then produce your method’s outputs in the directory layout described below.
 
 ### Method Result layout (generated models)
 
@@ -136,7 +136,7 @@ For each sample, `cadtest`:
 
 ## Hugging Face
 
-CADTestBench is loaded from **[CADTests/CADTestBench](https://huggingface.co/datasets/CADTests/CADTestBench)** by default.
+CADTestBench is loaded from **[anon-submission-2465453/CADTestBench](https://huggingface.co/datasets/anon-submission-2465453/CADTestBench)** by default.
 
 ## License
 
