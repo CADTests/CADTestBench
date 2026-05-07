@@ -16,7 +16,7 @@ _CADTEST_TOPLEVEL_KWARGS = (
     "strict_generated_code",
 )
 
-_DEFAULT_HUB_DATASET = "CADTests/CADTestBench"
+_DEFAULT_HUB_DATASET = "anon-submission-2465453/CADTestBench"
 
 
 def _finalize_evaluate_paths(args: argparse.Namespace) -> argparse.Namespace:
